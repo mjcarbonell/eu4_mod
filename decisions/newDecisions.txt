@@ -1,0 +1,84 @@
+country_decisions = {
+
+	get_money = {
+		potential = {
+			OR = {
+				tag = FRA
+			}
+		}
+		allow = {
+			#is_core = 257
+			#is_at_war = no
+		}
+		effect = {
+			add_treasury = 1000
+		}
+	}
+
+	say_the_state_is_me = {
+		potential = {
+			tag = FRA
+			
+			NOT = { has_country_modifier = the_state_is_me }
+			government = monarchy
+		}
+		allow = {
+			adm = 1
+			monthly_income = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_state_is_me"
+				duration = -1
+			}
+			add_absolutism = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+
+
+	form_phillipines = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			tag = CEB
+			OR = {
+				NOT = { exists = PHI }
+				ai = no
+			}
+		}
+		
+		allow = {
+			
+		}
+		effect = {
+			change_tag = PHI
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { num_of_cities = 10 }
+					NOT = { owns_core_province = 41 }
+				}
+			}
+
+			ai_importance = 1000
+	}
+
+}

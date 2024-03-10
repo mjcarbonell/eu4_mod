@@ -245,8 +245,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//missions//test_mission_1.dds"
 	}
 	spriteType = {
-		name = "test_mission_2"
-		texturefile = "gfx//interface//missions//test_mission_2.dds"
+		name = "prepare_to_invade_charles"
+		texturefile = "gfx//interface//missions//prepare_to_invade_charles.dds"
 	}
 	
 	spriteType = {

@@ -1,6 +1,6 @@
 swe_scandinavian_colonialism_mission_slot = {
 	slot = 1
-	generic = no
+	generic = yes
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Lions of the North"
@@ -26,11 +26,10 @@ swe_scandinavian_colonialism_mission_slot = {
 		}
 		effect = {
 			add_treasury = 500
-			
 		}
 	}
-	test_mission_2 = {
-		icon = test_mission_2
+	prepare_to_invade_charles = {
+		icon = prepare_to_invade_charles
 		required_missions = { test_mission_1 }
 		position = 2
 		
@@ -38,7 +37,14 @@ swe_scandinavian_colonialism_mission_slot = {
 		}
 		effect = {
 			add_treasury = 500
+			1 = {
+				add_unit_construction = {
+					type = heavy_ship
+					amount = 5
+					speed = 0.1
+					cost = 0
+				}
+			}
 		}
 	}
-	
 }

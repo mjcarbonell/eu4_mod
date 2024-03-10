@@ -1,0 +1,31 @@
+######################################
+# Army Professionalism Events        #
+#                            		 #
+# Written by Henrik Lohmander		 #
+######################################
+
+namespace = new_soldiers_events
+
+#Rally troops event
+country_event = {
+	id = new_soldiers_events.1
+	title = new_soldiers_events.1.t
+	desc = new_soldiers_events.1.d
+	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+	goto = from
+
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = new_soldiers_events.1.b #We We need more money! (and salaries)
+		add_army_professionalism = 0.05
+		add_years_of_income = -0.25
+		add_treasury = 500
+	}
+	
+}
