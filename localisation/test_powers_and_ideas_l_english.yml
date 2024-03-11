@@ -5,3 +5,15 @@
 
  island_navy:0 "The Island Navy"
  island_navy:0 "The people of the islands have decided to protect themselves against the Spanish"
+
+
+# government reforms 
+ maxim_autocracy_reform:0 "Maxim Feudalism"
+ maxim_autocracy_reform_desc:0 "MAXIM IN THE French court affairs."
+# government mechanics
+maxim_militarization_mechanic:0 "Maxim Militarization"
+maxim_militarized_society:0 "Maxim Militarized Society"
+
+ability_maxim_militarization_mechanic:0 "Early Maxim Militarization"
+
+ 

@@ -1,7 +1,42 @@
 ﻿l_english:
  
- get_money_title:0 "Institute Money"
- get_money_desc:0 "Our monarchy needs money"
+ infantry_lvl1_decision_title:0 "Afford Infantry"
+ infantry_lvl1_decision_desc:0 "We must allocate funds towards our infantry."
+
+ infantry_lvl2_decision_title:0 "Infantry Fire"
+ infantry_lvl2_decision_desc:0 "We must add more firepower to our infantry."
+
+ infantry_lvl3_decision_title:0 "Infantry Ability"
+ infantry_lvl3_decision_desc:0 "We must add a final boost to the morale of our troops."
+
+ cavalry_lvl1_decision_title:0 "Afford Cavalry"
+ cavalry_lvl1_decision_desc:0 "We must make our cavalry more affordable"
+
+ cavalry_lvl2_decision_title:0 "Cavalry Fire"
+ cavalry_lvl2_decision_desc:0 "The cavalary must get more firepower"
+
+ cavalry_lvl3_decision_title:0 "Cavalry Ability"
+ cavalry_lvl3_decision_desc:0 "We must make the cavalry more powerful"
+
+ artillery_lvl1_decision_title:0 "Afford Artillery"
+ artillery_lvl1_decision_desc:0 "We must make our artillery more affordable"
+
+ artillery_lvl2_decision_title:0 "Artillery Fire"
+ artillery_lvl2_decision_desc:0 "The artillery must get more firepower"
+
+ artillery_lvl3_decision_title:0 "Artillery Ability"
+ artillery_lvl3_decision_desc:0 "We must make the artillery more powerful"
+
+
  form_phillipines_title:0 "Form the Phillipines"
  form_phillipines_desc:0 "It is time to form the Phillipines."
  
+ 
+
+
+
+
+
+
+
+

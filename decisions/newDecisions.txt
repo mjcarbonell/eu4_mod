@@ -1,19 +1,171 @@
 country_decisions = {
 
-	get_money = {
+	infantry_lvl1_decision = {
 		potential = {
-			OR = {
-				tag = FRA
-			}
+			NOT = { has_country_modifier = infantry_lvl1 }
 		}
 		allow = {
-			#is_core = 257
-			#is_at_war = no
+			if = {
+				total_development = 300
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
 		}
 		effect = {
-			add_treasury = 1000
+			add_country_modifier = {
+				name = "infantry_lvl1"
+				duration = -1
+			}
+			infantry_cost = 0.10
 		}
 	}
+	infantry_lvl2_decision = {
+		potential = {
+			NOT = { has_country_modifier = infantry_lvl2 }
+		}
+		allow = {
+			if = {
+				total_development = 500
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "infantry_lvl2"
+				duration = -1
+			}
+		}
+	}
+	infantry_lvl3_decision = {
+		potential = {
+			NOT = { has_country_modifier = infantry_lvl3 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "infantry_lvl3"
+				duration = -1
+			}
+		}
+	}
+	cavalry_lvl1_decision = {
+		potential = {
+			NOT = { has_country_modifier = cavalry_lvl1 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cavalry_lvl1"
+				duration = -1
+			}
+		}
+	}
+	cavalry_lvl2_decision = {
+		potential = {
+			NOT = { has_country_modifier = cavalry_lvl2 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cavalry_lvl2"
+				duration = -1
+			}
+		}
+	}
+	cavalry_lvl3_decision = {
+		potential = {
+			NOT = { has_country_modifier = cavalry_lvl3 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cavalry_lvl3"
+				duration = -1
+			}
+		}
+	}
+	artillery_lvl1_decision = {
+		potential = {
+			NOT = { has_country_modifier = artillery_lvl1 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "artillery_lvl1"
+				duration = -1
+			}
+		}
+	}
+	artillery_lvl2_decision = {
+		potential = {
+			NOT = { has_country_modifier = artillery_lvl2 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "artillery_lvl2"
+				duration = -1
+			}
+		}
+	}
+	artillery_lvl3_decision = {
+		potential = {
+			NOT = { has_country_modifier = artillery_lvl3 }
+		}
+		allow = {
+			if = {
+				total_development = 700
+				army_size = 20
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "artillery_lvl3"
+				duration = -1
+			}
+		}
+	}
+
+
+
 
 	say_the_state_is_me = {
 		potential = {
@@ -79,6 +231,7 @@ country_decisions = {
 			}
 
 			ai_importance = 1000
-	}
+		}
 
+	}
 }
